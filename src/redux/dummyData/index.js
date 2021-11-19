@@ -56,9 +56,9 @@ const questions = [
     {
         questionText: 'What is the currency of Egypt?',
         answerOptions: [
-            { answerText: 'EGP', isCorrect: false },
+            { answerText: 'EGP', isCorrect: true },
             { answerText: 'USD', isCorrect: false },
-            { answerText: 'EUR', isCorrect: true },
+            { answerText: 'EUR', isCorrect: false },
             { answerText: 'GBP', isCorrect: false },
         ]
     },
