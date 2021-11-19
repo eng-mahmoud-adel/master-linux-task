@@ -10,7 +10,6 @@ import './homeScreen.css';
 const HomeScreen = () => {
     const {questions} = useSelector(state => state.questions);
     const {answers} = useSelector(state => state.questions);
-    console.log(answers);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [result, setResult] = useState(0);
     const [showResult, setShowResult] = useState(false);
@@ -34,9 +33,11 @@ const HomeScreen = () => {
             }, 1500);
             
 		} else {
-			setShowResult(true);
-            dispatch(getResult(result));
-            navigate('/result');
+            setTimeout(() => {
+                setShowResult(true);
+                dispatch(getResult(result));
+                navigate('/result');
+            }, 1500);
 		}
 	}
 
