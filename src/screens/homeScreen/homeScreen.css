@@ -1,0 +1,8 @@
+.questions_screen .title {
+    text-decoration: underline;
+}
+
+.questions_screen .questions .quetionText {
+    font-size: 36px;
+    margin-top: 24px;
+}
